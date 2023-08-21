@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>MY • COMPANY</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="admin-wrapper">
+		<aside class="sidebar">
+			<header class="header">
+				<a class="header__logo logo" href="/"><img src="images/logo.png" alt="company name"></a>
+			</header>
+			<div class="menu">
+				<div class="menu__item">
+					<button class="menu__btn" data-btn="#queries">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M14 2V8H20" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M16 13H8" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M16 17H8" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M10 9H9H8" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<span>Заявки</span>
+					</button>
+					<div class="menu__btn-count">2</div>
+				</div>
+				<div class="menu__item">
+					<button class="menu__btn" data-btn="#gifts">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20 12V22H4V12" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M22 7H2V12H22V7Z" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M12 22V7" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z" stroke="#C5C7CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<span>Подарки</span>
+					</button>
+				</div>
+				<div class="menu__item">
+					<button class="menu__btn" data-btn="#users">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<span>Пользователи</span>
+					</button>
+				</div>
+			</div>
+		</aside>
+
+
+		<div class="content">
+			<div class="content__screen queries" id="queries">
+				<h2 class="content__title">Заявки</h2>
+
+				<div class="queries__filters">
+					<div class="queries__filters-btns">
+						<button class="queries__filters-btn">Все</button>
+						<button class="queries__filters-btn">Оформлена</button>
+						<button class="queries__filters-btn">В обработке</button>
+						<button class="queries__filters-btn">Выполнена</button>
+					</div>
+				</div>
+
+				<div class="queries__inner">
+					<div class="queries__item">
+						<div class="queries__order">
+							<div class="queries__info">
+								<img class="queries__avatar" src="images/person.png" alt="">
+								<span class="queries__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+							</div>
+							<ul class="queries__details">
+								<li class="queries__date" id="queries-date">12.01.2022</li>
+								<li class="queries__amount" id="queries-amount">1 шт.</li>
+								<li class="queries__price"><span class="queries__price-num" id="queries-price">3500</span>Б</li>
+								<li class="queries__status queries__status--processed" id="queries-status">Оформлена</li>
+							</ul>
+						</div>
+						<div class="queries__btns">
+							<img src="images/comment-icon.svg" alt="">
+							<a class="popup-link" href="#edit-query"><img src="images/edit-icon.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="queries__item">
+						<div class="queries__order">
+							<div class="queries__info">
+								<img class="queries__avatar" src="images/person.png" alt="">
+								<span class="queries__name" id="queries-name">Подарочный сертификат на&nbsp;3500 рублей</span>
+							</div>
+							<ul class="queries__details">
+								<li class="queries__date" id="queries-date">12.01.2022</li>
+								<li class="queries__amount" id="queries-amount">1 шт.</li>
+								<li class="queries__price"><span class="queries__price-num" id="queries-price">3500</span>Б</li>
+								<li class="queries__status queries__status--processing" id="queries-status">В обработке</li>
+							</ul>
+						</div>
+						<div class="queries__btns">
+							<img src="images/comment-icon.svg" alt="">
+							<a class="popup-link" href="#edit-query"><img src="images/edit-icon.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="queries__item">
+						<div class="queries__order">
+							<div class="queries__info">
+								<img class="queries__avatar" src="images/person.png" alt="">
+								<span class="queries__name">Дополнительный обед</span>
+							</div>
+							<ul class="queries__details">
+								<li class="queries__date" id="queries-date">12.01.2022</li>
+								<li class="queries__amount" id="queries-amount">1 шт.</li>
+								<li class="queries__price"><span class="queries__price-num" id="queries-price">3500</span>Б</li>
+								<li class="queries__status queries__status--done" id="queries-status">Выполнена</li>
+							</ul>
+						</div>
+						<div class="queries__btns">
+							<img src="images/comment-icon.svg" alt="">
+							<a class="popup-link" href="#edit-query"><img src="images/edit-icon.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content__screen gifts" id="gifts">
+				<div class="content__heading">
+					<h2 class="content__title">Подарки</h2>
+					<a class="content__btn popup-link" href="#add-item">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<span>Добавить</span>
+					</a>
+				</div>
+
+				<form class="content__tools">
+					<div class="content__search">
+						<input type="search" placeholder="Поиск...">
+					</div>
+					<div class="content__filter">
+						<select name="product-filter" id="">
+							<option>По алфавиту</option>
+							 <option>Пункт 2</option>
+						</select>
+					</div>
+				</form>
+
+				<div class="shop__inner">
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg01.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon01.png" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+						<span class="product-item__price">3500</span>
+						</div>
+					</a>
+
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg03.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon03.svg" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Дополнительный выходной</span>
+						<span class="product-item__price">2000</span>
+						</div>
+					</a>
+
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg02.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon04.png" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+						<span class="product-item__price">3500</span>
+						</div>
+					</a>
+
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg04.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon02.png" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Дополнительный обед</span>
+						<span class="product-item__price">200</span>
+						</div>
+					</a>
+
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg01.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon01.png" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+						<span class="product-item__price">3500</span>
+						</div>
+					</a>
+
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg03.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon03.svg" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Дополнительный выходной</span>
+						<span class="product-item__price">2000</span>
+						</div>
+					</a>
+
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg02.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon04.png" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+						<span class="product-item__price">3500</span>
+						</div>
+					</a>
+
+					<a href="#edit-item" class="shop__item product-item popup-link">
+						<div class="product-item__topside">
+							<img class="product-item__bg" src="images/product-bg04.jpg" alt="">
+							<img class="product-item__icon" src="images/product-icon03.svg" alt="">
+						</div>
+						<div class="product-item__botside">
+							<span class="product-item__name">Дополнительный обед</span>
+						<span class="product-item__price">200</span>
+						</div>
+					</a>
+				</div>
+
+
+			</div>
+
+			<div class="content__screen users" id="users">
+				<h2 class="content__title">Пользователи</h2>
+
+				<form class="content__tools">
+					<div class="content__search">
+						<input type="search" placeholder="Поиск...">
+					</div>
+					<div class="content__filter">
+						<select name="product-filter" id="">
+							<option>По алфавиту</option>
+							 <option>Пункт 2</option>
+						</select>
+					</div>
+				</form>
+
+				<ul class="users__columns">
+					<li>Пользователь</li>
+					<li>Зарегистрирован</li>
+					<li>Стаж</li>
+					<li>Баланс</li>
+				</ul>
+
+				<div class="users__inner">
+					<div class="users__item">
+						<div class="users__info">
+							<div class="users__person">
+								<img class="users__avatar" src="images/person.png" alt="">
+								<span class="users__name">Massa</span>
+							</div>
+							<div class="users__date" id="users-date">
+								12.01.2022
+							</div>
+							<div class="users__experience" id="user-experience">
+								1 год
+							</div>
+							<div class="users__points"><span id="users-points">3500</span> Б</div>
+						</div>
+						<a class="users__btn popup-link" href="#edit-user"><img src="images/edit-icon.svg" alt=""></a>
+					</div>
+					<div class="users__item">
+						<div class="users__info">
+							<div class="users__person">
+								<img class="users__avatar" src="images/person.png" alt="">
+								<span class="users__name">Massa</span>
+							</div>
+							<div class="users__date" id="users-date">
+								12.01.2022
+							</div>
+							<div class="users__experience" id="user-experience">
+								1 год
+							</div>
+							<div class="users__points"><span id="users-points">3500</span> Б</div>
+						</div>
+						<a class="users__btn popup-link" href="#edit-user"><img src="images/edit-icon.svg" alt=""></a>
+					</div>
+					<div class="users__item">
+						<div class="users__info">
+							<div class="users__person">
+								<img class="users__avatar" src="images/person.png" alt="">
+								<span class="users__name">Massa</span>
+							</div>
+							<div class="users__date" id="users-date">
+								12.01.2022
+							</div>
+							<div class="users__experience" id="user-experience">
+								1 год
+							</div>
+							<div class="users__points"><span id="users-points">3500</span> Б</div>
+						</div>
+						<a class="users__btn popup-link" href="#edit-user"><img src="images/edit-icon.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="edit-query">
+		<div class="popup__body">
+		  <div class="popup__content">
+			<a class="popup__close close-popup" href="#">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path class="st1" d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path class="st1" d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<div class="popup__item edit edit-query">
+				<h6 class="edit__title">Статус заявки</h6>
+				<div class="edit-query__info">
+					<div class="edit-query__person">
+						<img class="edit-query__avatar" src="images/person.png" alt="">
+						<span class="edit-query__name">Константинопольский Константин</span>
+					</div>
+					<div class="edit-query__query">
+						<span id="queries-amount">1</span> x <span>Подарочный сертификат на&nbsp;3500 рублей</span>
+					</div>
+					<div class="edit-query__details">
+						<div class="edit-query__price"><span class="edit-query__price-num" id="queries-price">3500</span> Б</div>
+						<div class="edit-query__date" id="queries-date">12.01.2022</div>
+					</div>
+				</div>
+				<form class="edit-query__form popup-form" action="">
+					<div class="edit-query__radio-btns">
+						<label class="edit-query__radio-btn">
+							<input class="edit-query__radio-input" type="radio" name="queries-status" value="1">
+							Оформлена
+							<span class="edit-query__radio-cirle"></span>
+						</label>
+						<label class="edit-query__radio-btn">
+							<input class="edit-query__radio-input" type="radio" name="queries-status" value="2">
+							В обработке
+							<span class="edit-query__radio-cirle"></span>
+						</label>
+						<label class="edit-query__radio-btn">
+							<input class="edit-query__radio-input" type="radio" name="queries-status" value="3">
+							Выполнена
+							<span class="edit-query__radio-cirle"></span>
+						</label>
+					</div>
+
+					<div class="popup-form__textarea-wrap">
+						<textarea class="popup-form__textarea" id="query-comment" placeholder="Комментарий"></textarea>
+						<a class="popup-form__textarea-icon" href="#">
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 6H5H21" stroke="#F94153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#F94153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>
+
+					<button class="popup-form__btn btn-add btn btn--blue">Сохранить</button>
+					<button class="popup-form__btn btn-cancel">Закрыть</button>
+				</form>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="popup" id="add-item">
+		<div class="popup__body">
+		  <div class="popup__content">
+			<a class="popup__close close-popup" href="#">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path class="st1" d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path class="st1" d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<div class="popup__item edit add-item">
+				<form class="add-item__form" action="">
+					<h6 class="edit__title">Новый подарок</h6>
+					<div class="add-item__uploads">
+						<input name="product-bg" type="file" accept="image/png, image/jpeg, image/jpg, image/webp, image/svg">
+						<input name="product-icon" type="file" accept="image/png, image/jpeg, image/jpg, image/webp, image/svg">
+					</div>
+
+					<input class="popup-form__input" type="text" placeholder="Название">
+					<label class="popup-form__label">
+						<input class="popup-form__input" type="text" placeholder="Цена">
+					</label>
+
+					<div class="add-item__checkbox">
+						<label class="add-item__checkbox-label">
+							<input type="checkbox">
+							Скрыть подарок из списка
+							<span class="add-item__checkbox-btn"></span>
+						</label>
+					</div>
+
+					<button class="popup-form__btn btn-add btn btn--blue">Создать</button>
+					<button class="popup-form__btn btn-cancel close-popup">Отмена</button>
+					<button class="popup-form__btn btn-delete" style="display: none;">Удалить подарок</button>
+				</form>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="popup" id="edit-user">
+		<div class="popup__body">
+		  <div class="popup__content">
+			<a class="popup__close close-popup" href="#">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path class="st1" d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path class="st1" d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<div class="popup__item edit edit-user">
+				<h6 class="edit__title">Пользователь</h6>
+
+				<div class="edit-user__person">
+					<img class="edit-user__avatar" src="images/person.png" alt="">
+					<div class="edit-user__info">
+						<span class="edit-user__name">Moses Maldonado</span>
+						<span class="edit-user__location person__location">Санкт-Петербург</span>
+
+						<div class="edit-user__counter">
+							<span class="edit-user__person-title">Работает в компании:</span>
+							<div class="edit-user__counter-box">
+								<span class="counter__years">6</span> лет <span class="counter__months">11</span> месяцев <span class="counter__days">23</span> дня
+							</div>
+						</div>
+
+						<div class="edit-user__points">
+							<div class="edit-user__points-box">
+								<span class="edit-user__person-title">Бонусный баланс:</span>
+								<span class="edit-user__points-wrap"><span class="edit-user__points-num">12 350</span> Б</span>
+							</div>
+							<a href="#edit-points" class="edit-user__points-btn popup-link">Изменить</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="edit-user__history history-item">
+					<div class="history-item__item">
+						<div class="history-item__product">
+							<img class="history-item__avatar" src="images/product-icon01.png" alt="">
+							<span class="history-item__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+						</div>
+						<div class="history-item__details">
+							<span class="history-item__cost"><span class="history-item__cost-num" id="queries-price">-3500</span> Б</span>
+							<span class="history-item__date" id="history-date">12.01.2022</span>
+						</div>
+					</div>
+					<div class="history-item__item">
+						<div class="history-item__product">
+							<img class="history-item__avatar" src="images/product-icon03.svg" alt="">
+							<span class="history-item__name">Поздравляем! Ты с нами уже 4&nbsp;года.</span>
+						</div>
+						<div class="history-item__details">
+							<span class="history-item__cost"><span class="history-item__cost-num" id="queries-price">+3500</span> Б</span>
+							<span class="history-item__date" id="history-date">12.01.2022</span>
+						</div>
+					</div>
+					<div class="history-item__item">
+						<div class="history-item__product">
+							<img class="history-item__avatar" src="images/product-icon04.png" alt="">
+							<span class="history-item__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+						</div>
+						<div class="history-item__details">
+							<span class="history-item__cost"><span class="history-item__cost-num" id="queries-price">-3500</span> Б</span>
+							<span class="history-item__date" id="history-date">12.01.2022</span>
+						</div>
+					</div>
+					<div class="history-item__item">
+						<div class="history-item__product">
+							<img class="history-item__avatar" src="images/product-icon03.svg" alt="">
+							<span class="history-item__name">Поздравляем! Ты с нами уже 4&nbsp;года.</span>
+						</div>
+						<div class="history-item__details">
+							<span class="history-item__cost"><span class="history-item__cost-num" id="queries-price">+3500</span> Б</span>
+							<span class="history-item__date" id="history-date">12.01.2022</span>
+						</div>
+					</div>
+					<div class="history-item__item">
+						<div class="history-item__product">
+							<img class="history-item__avatar" src="images/product-icon01.png" alt="">
+							<span class="history-item__name">Подарочный сертификат на&nbsp;3500 рублей</span>
+						</div>
+						<div class="history-item__details">
+							<span class="history-item__cost"><span class="history-item__cost-num" id="queries-price">-3500</span> Б</span>
+							<span class="history-item__date" id="history-date">12.01.2022</span>
+						</div>
+					</div>
+				</div>
+
+				<button class="popup-form__btn btn-add btn btn--blue">ОК</button>
+				<button class="popup-form__btn btn-delete">Удалить пользователя</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="popup" id="edit-points">
+		<div class="popup__body">
+		  <div class="popup__content">
+			<a class="popup__close close-popup" href="#">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path class="st1" d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path class="st1" d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<div class="popup__item edit edit-points">
+				<h6 class="edit__title">Изменить баланс</h6>
+				<form class="edit-points__form popup-form" action="">
+					<span class="edit-points__title">Текущий баланс:</span>
+					<span class="edit-points__points"><span class="edit-points__points-num">12 350</span> Б</span>
+
+					<div class="edit-points__tooltip">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M9.08984 9.00002C9.32495 8.33169 9.789 7.76813 10.3998 7.40915C11.0106 7.05018 11.7287 6.91896 12.427 7.03873C13.1253 7.15851 13.7587 7.52154 14.2149 8.06355C14.6712 8.60555 14.9209 9.29154 14.9198 10C14.9198 12 11.9198 13 11.9198 13" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M12 17H12.01" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						<span>Чтобы уменьшить баланс введите отрицательное значение в поле «Количество».</span>
+					</div>
+
+					<label class="popup-form__label">
+						<input class="popup-form__input" type="text" placeholder="Количество">
+					</label>
+
+					<div class="popup-form__textarea-wrap">
+						<textarea class="popup-form__textarea" id="query-comment" placeholder="Сообщение"></textarea>
+						<a class="popup-form__textarea-icon" href="#">
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 6H5H21" stroke="#F94153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#F94153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>
+
+					<button class="popup-form__btn btn-add btn btn--blue">Изменить</button>
+					<button class="popup-form__btn btn-cancel close-popup">Отмена</button>
+				</form>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

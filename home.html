@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>MY • COMPANY</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="container">
+		<header class="header">
+			<div class="header__inner">
+				<a class="header__logo logo" href="/"><img src="images/logo.png" alt="company name"></a>
+				<div class="header__btn-box">
+					<div class="header__points">
+						<span class="header__points-title">баланс</span><span class="header__points-num">12 350</span>
+					</div>
+					<a class="header__btn btn" href="#">Выйти</a>
+					<button class="header__tabs-btn tabs__btn" data-tab="#tab_4">
+						<img class="person__avatar person-avatar" src="images/person.png" alt="">
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<div class="screen">
+			<div class="person">
+				<div class="person__topside">
+					<img class="person__bg person-bg" src="images/person-bg.jpg" alt="">
+					<img class="person__avatar person-avatar" src="images/person.png" alt="">
+					<div class="person__shadow"><img class="person__avatar person-avatar" src="images/person.png" alt=""></div>
+				</div>
+				<div class="person__botside">
+					<span class="person__name person-name">Moses Maldonado</span>
+					<span class="person__location person-location">Санкт-Петербург</span>
+					<p class="person__descr person-description">
+						Dapibus sed mattis Dapibus
+					</p>
+					<div class="person__counter counter person-counter">
+						<span class="counter__title">работаю в Google</span>
+						<div class="counter__box">
+							<div class="counter__years">
+								<span class="counter__num">6</span>
+								<span class="counter__signa">Лет</span>
+							</div>
+							<div class="counter__months">
+								<span class="counter__num">11</span>
+								<span class="counter__signa">месяцев</span>
+							</div>
+							<div class="counter__days">
+								<span class="counter__num">23</span>
+								<span class="counter__signa">дня</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="tabs">
+					<div class="tabs__nav">
+						<div class="tabs__btns">
+							<button class="tabs__btn profile-btn" data-tab="#tab_4">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>Профиль</span>
+							</button>
+							<button class="tabs__btn active" data-tab="#tab_1">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>Магазин</span>
+							</button>
+							<button class="tabs__btn" data-tab="#tab_2">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2V2Z" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>История</span>
+							</button>
+							<button class="tabs__btn" data-tab="#tab_3">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M9.08984 9.00002C9.32495 8.33169 9.789 7.76813 10.3998 7.40915C11.0106 7.05018 11.7287 6.91896 12.427 7.03873C13.1253 7.15851 13.7587 7.52154 14.2149 8.06355C14.6712 8.60555 14.9209 9.29154 14.9198 10C14.9198 12 11.9198 13 11.9198 13" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M12 17H12.01" stroke="#CBCBCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>Правила</span>
+							</button>
+
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__item shop active" id="tab_1">
+							<h2 class="shop__title title">Магазин</h2>
+							<div class="shop__inner">
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg01.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Подарочный сертификат на&nbsp;3500 рублей</span>
+									<span class="product-item__price product-price">3500</span>
+									</div>
+								</a>
+
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg03.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon03.svg" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Дополнительный выходной</span>
+									<span class="product-item__price product-price">2000</span>
+									</div>
+								</a>
+
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg02.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon04.png" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Подарочный сертификат на&nbsp;3500 рублей</span>
+									<span class="product-item__price product-price">3500</span>
+									</div>
+								</a>
+
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg04.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon03.svg" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Дополнительный обед</span>
+									<span class="product-item__price product-price">200</span>
+									</div>
+								</a>
+
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg01.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Подарочный сертификат на&nbsp;3500 рублей</span>
+									<span class="product-item__price product-price">3500</span>
+									</div>
+								</a>
+
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg03.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon03.svg" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Дополнительный выходной</span>
+									<span class="product-item__price product-price">2000</span>
+									</div>
+								</a>
+
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg02.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon04.png" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Подарочный сертификат на&nbsp;3500 рублей</span>
+									<span class="product-item__price product-price">3500</span>
+									</div>
+								</a>
+
+								<a href="#product-item" class="shop__item product-item popup-link">
+									<div class="product-item__topside">
+										<img class="product-item__bg product-bg" src="images/product-bg04.jpg" alt="">
+										<img class="product-item__icon product-icon" src="images/product-icon03.svg" alt="">
+									</div>
+									<div class="product-item__botside">
+										<span class="product-item__name product-name">Дополнительный обед</span>
+									<span class="product-item__price product-price">200</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="tabs__item history" id="tab_2">
+							<h2 class="history__title title">История</h2>
+							<div class="history__inner">
+								<div class="history__item">
+									<div class="history__item-date history-date">18 октября 2020</div>
+									<div class="history__item-inner">
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+												<span class="product-item__name product-name">Подарочный сертификат на 3500 рублей</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost product-cost">-3500</span>
+											</div>
+										</div>
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+												<span class="product-item__name product-name">Подарочный сертификат на 3500 рублей</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost product-cost ">-3500</span>
+											</div>
+										</div>
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+												<span class="product-item__name product-name">Подарочный сертификат на 3500 рублей</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost product-cost">-3500</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="history__item">
+									<div class="history__item-date history-date">1 января 2020</div>
+									<div class="history__item-inner">
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon" src="images/product-icon03.svg" alt="">
+												<span class="product-item__name product-name">Поздравляем! Ты с нами уже 4 года.</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost incoming">+3500</span>
+											</div>
+										</div>
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon product-icon" src="images/product-icon03.svg" alt="">
+												<span class="product-item__name">С днём рождения!</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost incoming">+2200</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="history__item">
+									<div class="history__item-date history-date">18 октября 2020</div>
+									<div class="history__item-inner">
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+												<span class="product-item__name product-name">Подарочный сертификат на 3500 рублей</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost product-cost">-3500</span>
+											</div>
+										</div>
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+												<span class="product-item__name product-name">Подарочный сертификат на 3500 рублей</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost product-cost">-3500</span>
+											</div>
+										</div>
+										<div class="history__item-sale product-item">
+											<div class="product-item__leftside">
+												<img class="product-item__icon product-icon" src="images/product-icon03.svg" alt="">
+												<span class="product-item__name product-name">Дополнительный обед</span>
+											</div>
+											<div class="product-item__rightside">
+												<span class="product-item__cost product-cost">-200</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__item terms" id="tab_3">
+							<h2 class="terms__title title">Правила</h2>
+							<div class="terms__inner">
+								<p class="terms__text text text--bold">
+									Enim aliquam montes, diam viverra. Imperdiet lectus in turpis curabitur. Et, lorem diam sapien, felis. Convallis pharetra, nunc sed mattis parturient sit sit vel. Felis augue augue amet sit tortor. Egestas nulla ultricies diam mattis enim amet. Arcu, dignissim ultricies orci, facilisis.
+								</p>
+								<p class="terms__text text">
+									Enim aliquam montes, diam viverra. Imperdiet lectus in turpis curabitur. Et, lorem diam sapien, felis. Convallis pharetra, nunc sed mattis parturient sit sit vel. Felis augue augue amet sit tortor. Egestas nulla ultricies diam mattis enim amet. Arcu, dignissim ultricies orci, facilisis.
+								</p>
+								<p class="terms__text title">
+									Adipiscing eget massa tempor gravida augue
+								</p>
+								<p class="terms__text text">
+									Enim aliquam montes, diam viverra. Imperdiet lectus in turpis curabitur. Et, lorem diam sapien, felis. Convallis pharetra, nunc sed mattis parturient sit sit vel. Felis augue augue amet sit tortor. Egestas nulla ultricies diam mattis enim amet. Arcu, dignissim ultricies orci, facilisis.
+								</p>
+								<ul class="terms__list list">
+									<li class="list__item">
+										Enim aliquam montes, diam viverra
+									</li>
+									<li class="list__item">
+										Enim aliquam montes, diam viverra
+									</li>
+									<li class="list__item">
+										Enim aliquam montes, diam viverra
+									</li>
+									<li class="list__item">
+										Enim aliquam montes, diam viverra
+									</li>
+									<li class="list__item">
+										Enim aliquam montes, diam viverra
+									</li>
+								</ul>
+								<p class="terms__text text">
+									Enim aliquam montes, diam viverra. Imperdiet lectus in turpis curabitur. Et, lorem diam sapien, felis. Convallis pharetra, nunc sed mattis parturient sit sit vel. Felis augue augue amet sit tortor. Egestas nulla ultricies diam mattis enim amet. Arcu, dignissim ultricies orci, facilisis.
+								</p>
+								<button class="tabs__btn" data-tab="#tab_1">Потратить баллы</button>
+							</div>
+						</div>
+						<div class="tabs__item" id="tab_4">
+							<div class="person">
+								<div class="person__topside">
+									<img class="person__bg person-bg" src="images/person-bg.jpg" alt="">
+									<img class="person__avatar person-avatar" src="images/person.png" alt="">
+									<div class="person__shadow"><img class="person__avatar person-avatar" src="images/person.png" alt=""></div>
+								</div>
+								<div class="person__botside">
+									<span class="person__name person-name">Moses Maldonado</span>
+									<span class="person__location person-location">Санкт-Петербург</span>
+									<p class="person__descr person-description">
+										apibus sed mattis Dapibus sed mattis
+									</p>
+									<div class="person__counter counter person-counter">
+										<span class="counter__title">работаю в Google</span>
+										<div class="counter__box">
+											<div class="counter__years">
+												<span class="counter__num">6</span>
+												<span class="counter__signa">Лет</span>
+											</div>
+											<div class="counter__months">
+												<span class="counter__num">11</span>
+												<span class="counter__signa">месяцев</span>
+											</div>
+											<div class="counter__days">
+												<span class="counter__num">23</span>
+												<span class="counter__signa">дня</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="profile-points">
+								<div class="profile-points__inner">
+									<div class="profile-points__title">Бонусный баланс</div>
+									<div class="profile-points__num">
+										12 350
+									</div>
+
+									<button class="tabs__btn shop-btn" data-tab="#tab_1">Потратить</button>
+
+									<button class="tabs__btn history-btn" data-tab="#tab_2">История баллов</button>
+								</div>
+							</div>
+
+							<div class="person__btn">
+								<a href="#">Выйти</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="product-item">
+		<div class="popup__body">
+		  <div class="popup__content">
+			<a class="popup__close close-popup" href="#">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path class="st1" d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path class="st1" d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<div class="popup__item product-item">
+				<div class="product-item__topside">
+					<div class="product-item__blur"></div>
+					<img class="product-item__bg product-bg" src="images/product-bg01.jpg" alt="">
+					<img class="product-item__icon product-icon" src="images/product-icon01.png" alt="">
+				</div>
+				<div class="product-item__botside">
+					<span class="product-item__name product-name">Подарочный сертификат на&nbsp;3500 рублей</span>
+					<div class="product-item__box">
+						<span class="product-item__cost" id="final-cost">3500</span>
+
+						<div class="product-item__counter">
+							<button class="product-item__counter-btn product-item__counter-decrease">–</button>
+							<div class="product-item__counter-counter">1 <span>шт.</span></div>
+							<button class="product-item__counter-btn product-item__counter-increase">+</button>
+						</div>
+					</div>
+
+					<a class="product-item__btn btn btn--blue popup-link" href="#thx" >Заказать</a>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="popup" id="thx">
+		<div class="popup__body">
+			<div class="popup__content">
+				<div class="popup__item thx-message">
+					<div class="thx-message__wrapper">
+						<p class="thx-message__text">
+							Твой заказ принят!<br>В&nbsp;течение 3х рабочих дней с&nbsp;тобой свяжется офис-менеджер для&nbsp;уточнения деталей.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
